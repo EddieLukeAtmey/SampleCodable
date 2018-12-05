@@ -93,10 +93,25 @@ struct SCRequest {
 //    }
 
     static func requestUser(completion: @escaping (User?, String?) -> Void) {
-        Alamofire.request("http://localhost:8181/user").responseDecodableObject { (response: DataResponse<CommonResponse<User>>) in
-            logResponse(response)
-            completion(response.value?.body, nil)
+        Alamofire.request("http://localhost:8181/user").responseData { (r) in
+            guard let data = r.data else { completion(nil, nil); return }
+
+            do {
+                let c = try JSONDecoder().decode(CommonResponse<User>.self, from: data)
+                let u = c.body
+                print(u as? Any)
+                completion(u, nil)
+            }
+            catch {
+                print(error)
+                completion(nil, nil)
+            }
         }
+
+//        responseDecodableObject { (response: DataResponse<CommonResponse<User>>) in
+//            logResponse(response)
+//            completion(response.value?.body, nil)
+//        }
     }
 
     private static func logResponse<T>(_ response: DataResponse<T>) {
