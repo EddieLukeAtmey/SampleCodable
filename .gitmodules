@@ -1,0 +1,3 @@
+[submodule "restBackend"]
+	path = restBackend
+	url = git@github.com:EddieLukeAtmey/LocalPerfectShop.git

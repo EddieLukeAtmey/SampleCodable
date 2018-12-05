@@ -5,9 +5,6 @@
       location = "group:SampleRequest/SampleRequest.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:restBackend/LocalPerfectShop.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:SampleCodable.xcodeproj">
    </FileRef>
    <FileRef
