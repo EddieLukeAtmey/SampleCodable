@@ -21,3 +21,14 @@ extension String: CodingKey {
         self = String(intValue)
     }
 }
+
+// MARK: - CodingKeys
+protocol CamelCaseCodingKey: CodingKey {}
+extension CamelCaseCodingKey where Self: RawRepresentable, Self.RawValue == String {
+    var stringValue: String {
+        return rawValue.replacingOccurrences(of: "([A-Z])",
+                                             with: "_$1",
+                                             options: .regularExpression,
+                                             range: rawValue.startIndex..<rawValue.endIndex).lowercased()
+    }
+}

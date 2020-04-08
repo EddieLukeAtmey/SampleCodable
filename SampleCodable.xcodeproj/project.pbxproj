@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1D51F0243D931B0033BB9B /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D51EF243D931B0033BB9B /* Number.swift */; };
+		2C1D51F3243D9C0D0033BB9B /* CommonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D51F2243D9C0D0033BB9B /* CommonModels.swift */; };
 		2FA01A6721B53A3A00CBBC0D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA01A6621B53A3A00CBBC0D /* main.swift */; };
 		2FA01A6F21B53E8E00CBBC0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA01A6E21B53E8E00CBBC0D /* Foundation.framework */; };
 		2FA01A9521B549EC00CBBC0D /* NewStyleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA01A9421B549EC00CBBC0D /* NewStyleParser.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C1D51EF243D931B0033BB9B /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		2C1D51F2243D9C0D0033BB9B /* CommonModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModels.swift; sourceTree = "<group>"; };
 		2FA01A6321B53A3A00CBBC0D /* SampleCodable */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SampleCodable; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA01A6621B53A3A00CBBC0D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2FA01A6E21B53E8E00CBBC0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1D51F1243D9C020033BB9B /* CommonModels */ = {
+			isa = PBXGroup;
+			children = (
+				2C1D51F2243D9C0D0033BB9B /* CommonModels.swift */,
+			);
+			path = CommonModels;
+			sourceTree = "<group>";
+		};
 		2FA01A5A21B53A3A00CBBC0D = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +127,7 @@
 		2FA01A6521B53A3A00CBBC0D /* SampleCodable */ = {
 			isa = PBXGroup;
 			children = (
+				2C1D51F1243D9C020033BB9B /* CommonModels */,
 				2FED3FE021B67E630037F02A /* Helper */,
 				2FA01A9021B5456D00CBBC0D /* SampleModels.swift */,
 				2FA01A7121B541E700CBBC0D /* NewStyle */,
@@ -171,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				2FED3FE121B67E690037F02A /* Extension */,
+				2C1D51EF243D931B0033BB9B /* Number.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -268,7 +282,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = NTQ;
+				ORGANIZATIONNAME = Eddie;
 				TargetAttributes = {
 					2FA01A6221B53A3A00CBBC0D = {
 						CreatedOnToolsVersion = 10.1;
@@ -349,7 +363,9 @@
 			files = (
 				2FED3FE321B67E790037F02A /* String+Extension.swift in Sources */,
 				2FA01A6721B53A3A00CBBC0D /* main.swift in Sources */,
+				2C1D51F0243D931B0033BB9B /* Number.swift in Sources */,
 				2FED402421B697A10037F02A /* SampleModels.swift in Sources */,
+				2C1D51F3243D9C0D0033BB9B /* CommonModels.swift in Sources */,
 				2FA01A9521B549EC00CBBC0D /* NewStyleParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
